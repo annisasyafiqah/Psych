@@ -214,7 +214,7 @@ header.navbar-container {
   main .container .card img {
     margin: 0 auto;
     min-width: 60px;
-    width: 125px;
+    width: 100px;
 
   }
 
@@ -251,7 +251,7 @@ header.navbar-container {
   }
 
   #new {
-    /* padding: .2rem 1rem; */
+    padding: 2rem 1rem;
     text-align: center;
   }
 
@@ -286,4 +286,118 @@ header.navbar-container {
     cursor: pointer;
     transition: all .15s ease-in;
   }
+
+  .quotes{
+    background-color: #FAF6F5;
+    /* margin: auto; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+
+  }
+
+  .quotes blockquote {
+    align-items: center;
+    margin-block-start: 1rem;
+    padding: .2rem 1rem;
+    text-align: center;
+
+  }
+  .quotes button {
+    border-radius: 20px;
+    padding: .2rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 3px solid #F47458;
+    color: #F47458;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  footer {
+    margin-block-start: 5rem;
+    background-color: #4d4d4d;
+    padding: .2rem 5rem;
+    /* flex-wrap: nowrap; */
+  }
+
+  footer p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+  footer p a {
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+
+
+ @media screen and (max-width: 768px) {
+
+  header.navbar-container {
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: .5rem;
+  }
+ 
+  main {
+    /* padding: 1rem 3rem; */
+  }
+ 
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+ 
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+ 
+  main .content .content-description p {
+    font-size: 1rem;
+    /* padding: .2rem 5rem;? */
+  }
+ 
+  main .content .content-image {
+    order: -1;
+    max-width: 500px;
+  }
+  main .container .cards{
+    display: block;
+    align-items: center;
+    margin: auto;
+    
+  }
+
+  main .container .card {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  main .container .card img {
+    margin: 0 auto;
+    min-width: 60px;
+    width: 100px;
+
+  }
+
+  #new .card{
+    column-count: 1;
+    display: block;
+    align-items: center;
+    margin: auto;
+  }
+ }
 
