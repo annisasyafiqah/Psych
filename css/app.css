@@ -243,6 +243,12 @@ header.navbar-container {
     transition: all .15s ease-in;
   }
 
+  main .container .section article button:hover {
+    border: 3px solid #5DA98F;
+    color: #5DA98F;
+    background-color: transparent;
+  }
+
   main .container .section article img {
     margin: 0 auto;
     width: 100%;
@@ -286,46 +292,63 @@ header.navbar-container {
     cursor: pointer;
     transition: all .15s ease-in;
   }
+  #new button:hover {
+    border: 3px solid #5DA98F;
+    color: #5DA98F;
+    background-color: transparent;
+  }
 
-  .quotes{
+  .myPages{
     background-color: #FAF6F5;
     /* margin: auto; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-content: center;
     text-align: center;
     padding: 2rem 1rem;
+    position: relative;
 
   }
-
-  .quotes blockquote {
-    align-items: center;
-    margin-block-start: 1rem;
-    padding: .2rem 1rem;
+  .quote {
+    display: none;
     text-align: center;
-
-  }
-  .quotes button {
-    border-radius: 20px;
-    padding: .2rem 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
-    border: 3px solid #F47458;
-    color: #F47458;
-    background-color: transparent;
+    margin: auto;
     align-items: center;
   }
+
+  .next {
+    right: 50px;
+  }
+  .previous {
+    left: 50px;
+  }
+  .previous, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    padding: 16px;
+    color: #F47458;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+  .quote q {font-style: italic;}
 
   footer {
     margin-block-start: 5rem;
     background-color: #4d4d4d;
     padding: .2rem 5rem;
-    /* flex-wrap: nowrap; */
   }
 
   footer p {
-    float: left;
+    text-align: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
@@ -347,10 +370,6 @@ header.navbar-container {
   header.navbar-container .nav-list ul {
     flex-wrap: wrap;
     column-gap: .5rem;
-  }
- 
-  main {
-    /* padding: 1rem 3rem; */
   }
  
   main .content {
@@ -375,7 +394,6 @@ header.navbar-container {
     display: block;
     align-items: center;
     margin: auto;
-    
   }
 
   main .container .card {
@@ -393,11 +411,25 @@ header.navbar-container {
 
   }
 
+  main .container .section article {
+    padding: 2rem 5rem;
+    column-count: 1;
+  
+  }
+
+  
+  main .container .section article img {
+    max-width: 400px;
+    margin-top: 20px;
+  
+  }
   #new .card{
     column-count: 1;
     display: block;
     align-items: center;
     margin: auto;
+    margin-top: 30px;
   }
  }
 
+ 
